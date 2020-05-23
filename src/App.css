@@ -60,6 +60,9 @@ a:hover,
 a:focus {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 
 /* All Transition */
 .list-inline.info a,
@@ -218,4 +221,13 @@ footer a,
   background: transparent;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+footer {
+  margin-top: 70px;
+  background: url(./img/footer_bg.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 45px;
+  min-height: 300px;
 }

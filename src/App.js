@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Carousel />
       <HomeAbout />
-      <Services />
+      {/* <Services /> */}
       <Contact />
       <Footer />
     </Fragment>
