@@ -1,38 +1,221 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --primary-color: #000080;
+  --secondary-color: #87cee8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* #000080  #1a5276 #5dade2*/
+body {
+  box-sizing: border-box;
+  font-size: 15px;
+  line-height: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #484848;
+  font-family: "futura_ltbold", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 70px;
+  margin: 0;
+  line-height: 72px;
+}
+h2 {
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+img {
+  width: 100%;
+}
+a,
+button {
+  outline: 0 !important;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a,
+button {
+  outline: 0 !important;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* All Transition */
+.list-inline.info a,
+.list-inline.social_icon a,
+nav.navbar.bootsnav ul.nav > li > a,
+.attr-nav > ul > li > a,
+.btn.know_btn,
+#filters > button,
+.portfolio_hover_area,
+.portfolio_hover_area .fa,
+.testimonial_content,
+.testimonial_content p:first-child::before,
+#contact_form .form-control,
+#contact_form .btn.submit_btn,
+footer a,
+.footer_social_icon .fa,
+.post .date,
+#scrollUp {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+
+/* Top Nav */
+#top-nav {
+  background: var(--primary-color);
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+#top-nav a {
+  color: #fff !important;
+}
+
+/* Main Nav */
+
+#main-navbar {
+  background: var(--secondary-color) none repeat scroll 0 0 !important;
+  border: 0 none;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 20px 15px;
+}
+#navbar-menu {
+  margin: 6px 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000 !important;
+}
+
+/* Carousel */
+#carousel .carousel {
+  position: relative;
+  height: 700px;
+  display: inline-block;
+}
+#carousel .carousel .item img {
+  width: 100%;
+  height: 700px;
+}
+
+#carousel .overlay {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.carousel-caption {
+  left: 7%;
+  right: 7%;
+  top: 70px;
+}
+
+.carousel-caption h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.carousel-caption h1.second_heading {
+  color: var(--secondary-color);
+  margin-bottom: 35px;
+}
+
+.carousel-caption > h3 {
+  color: #fff;
+  font-family: "futura_ltbook", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-transform: inherit;
+}
+.carousel-caption > p {
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.btn.know_btn {
+  background: var(--primary-color) none repeat scroll 0 0;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "futura_ltbold", sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+.carousel-caption .btn.know_btn {
+  margin-top: 64px;
+}
+.carousel-caption .btn.know_btn:last-child {
+  margin-left: 20px;
+}
+
+.btn.know_btn:hover,
+.btn.know_btn:focus {
+  background: transparent;
+  color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+/* Home About */
+
+.about-content {
+  margin-right: 25px;
+}
+
+.about-content > h2 {
+  font-size: 40px;
+  margin: 90px 0 15px;
+  color: var(--primary-color);
+}
+
+.about-content > p {
+  line-height: 18px;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.about_banner > img {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+#home-about .btn.know_btn:hover,
+#home-about .btn.know_btn:focus {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
 }
