@@ -2,7 +2,7 @@ import React from "react";
 import man from "../img/man.png";
 const HomeAbout = () => {
   return (
-    <div id="home-about" className="container my-4">
+    <div id="home-about" className="container">
       <div className="row">
         <div className="col-md-7">
           <div className="about-content">

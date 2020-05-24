@@ -193,6 +193,9 @@ footer a,
 }
 
 /* Home About */
+#home-about {
+  margin-top: 70px;
+}
 
 .about-content {
   margin-right: 25px;
@@ -223,6 +226,10 @@ footer a,
   border: 1px solid var(--primary-color);
 }
 
+#contact {
+  margin-top: 70px;
+}
+
 footer {
   margin-top: 70px;
   background: url(./img/footer_bg.jpg) no-repeat;
@@ -230,4 +237,46 @@ footer {
   position: relative;
   padding-top: 45px;
   min-height: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-caption h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .carousel-caption h1.second_heading {
+    margin-bottom: 10px;
+  }
+
+  .carousel-caption > h3 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  .carousel-caption > p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .btn.know_btn {
+    border-radius: 30px;
+    color: #fff;
+    font-family: "futura_ltbold", sans-serif;
+    font-size: 8px;
+    padding: 5px 10px;
+  }
+
+  .carousel-caption .btn.know_btn {
+    margin-top: 32px;
+  }
+  .carousel-caption .btn.know_btn:last-child {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #top-nav a {
+    font-size: 12px;
+  }
 }
