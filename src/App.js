@@ -8,6 +8,7 @@ import HomeAbout from "./components/HomeAbout";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
+import WhyUs from "./components/WhyUs";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Header />
       <Carousel />
       <HomeAbout />
-      {/* <Services /> */}
+      <Services />
+      <WhyUs />
       <Contact />
       <Footer />
     </Fragment>

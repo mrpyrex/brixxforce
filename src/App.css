@@ -23,7 +23,7 @@ h5,
 h6 {
   font-weight: bold;
   text-transform: uppercase;
-  color: #484848;
+  color: var(--primary-color);
   font-family: "futura_ltbold", sans-serif;
 }
 
@@ -40,6 +40,11 @@ h3 {
   font-size: 20px;
   margin: 0 0 10px;
 }
+
+section {
+  margin-top: 120px;
+}
+
 img {
   width: 100%;
 }
@@ -225,9 +230,60 @@ footer a,
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
+#home-services .row {
+  margin-top: 50px;
+}
 
-#contact {
-  margin-top: 70px;
+#home-services .col-md-3 {
+  padding: 20px;
+}
+
+#home-services .col-md-3:hover {
+  background: var(--secondary-color);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+#home-services .btn.know_btn:hover,
+#home-services .btn.know_btn:focus {
+  background: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+#home-services img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+#why-us ul {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+#why-us li {
+  line-height: 40px;
+  font-size: 20px;
+  position: relative;
+}
+
+#why-us li::after {
+  content: "";
+  height: 10px;
+  width: 7px;
+  background: var(--secondary-color);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 17px;
+  left: -25px;
+}
+#contact .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact img {
+  padding: 50px;
 }
 
 footer {
@@ -239,14 +295,14 @@ footer {
   min-height: 300px;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .carousel-caption h1 {
     margin-bottom: 10px;
     font-size: 40px;
   }
 
   .carousel-caption h1.second_heading {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .carousel-caption > h3 {
@@ -259,24 +315,7 @@ footer {
     line-height: 18px;
   }
 
-  .btn.know_btn {
-    border-radius: 30px;
-    color: #fff;
-    font-family: "futura_ltbold", sans-serif;
-    font-size: 8px;
-    padding: 5px 10px;
-  }
-
   .carousel-caption .btn.know_btn {
-    margin-top: 32px;
-  }
-  .carousel-caption .btn.know_btn:last-child {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #top-nav a {
-    font-size: 12px;
+    margin-top: 10px;
   }
 }

@@ -1,8 +1,9 @@
 import React from "react";
+import illustration4 from "../img/illustration4.png";
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <section id="contact">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
@@ -39,10 +40,12 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className="col-md-6"></div>
+          <div className="col-md-6 img">
+            <img src={illustration4} alt="" />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

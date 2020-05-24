@@ -1,31 +1,35 @@
 import React from "react";
+import service1 from "../img/service1.png";
+import service2 from "../img/service2.png";
+import service3 from "../img/service3.png";
+import service4 from "../img/service4.png";
 
 const Services = () => {
   return (
-    <div id="home-services">
+    <section className="text-center" id="home-services">
+      <h2>Our Services</h2>
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
-            <h4>Construction and Engineering</h4>
+          <div className="col-md-3">
+            <img src={service1} alt="" />
+            <h5>Architectural Design</h5>
           </div>
-          <div className="col-md-4">
-            <h4>Home Building and Renovation</h4>
+          <div className="col-md-3">
+            <img src={service2} alt="" />
+            <h5>Building Consultants</h5>
           </div>
-          <div className="col-md-4">
-            <h4>Maintenance and Repairs</h4>
+          <div className="col-md-3">
+            <img src={service3} alt="" />
+            <h5>Interior/Exterior Designs</h5>
           </div>
-          <div className="col-md-4">
-            <h4>Energy Distribution and Grids</h4>
-          </div>
-          <div className="col-md-4">
-            <h4>Oil and Gas Engineering</h4>
-          </div>
-          <div className="col-md-4">
-            <h4>Industrial Equipments and Specialists</h4>
+          <div className="col-md-3">
+            <img src={service4} alt="" />
+            <h5>Property Developers</h5>
           </div>
         </div>
+        <button className="btn know_btn my-4">learn more</button>
       </div>
-    </div>
+    </section>
   );
 };
 
