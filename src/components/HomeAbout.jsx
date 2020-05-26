@@ -11,7 +11,7 @@ const HomeAbout = () => {
               <p>
                 Brixxforce Groups is a dynamic and efficient architectural and
                 building construction firm that has been providing complete
-                architectural design, buildingconstruction, master planning,
+                architectural design,buildingconstruction, master planning,
                 landscaping and interior design servivces since 2010.
               </p>
               <a className="btn know_btn ">Learn More</a>
