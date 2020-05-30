@@ -1,5 +1,5 @@
 import React from "react";
-import man from "../img/man.png";
+import man from "../../../img/man.png";
 const HomeAbout = () => {
   return (
     <section>

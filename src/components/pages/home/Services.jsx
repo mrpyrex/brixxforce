@@ -1,8 +1,10 @@
 import React from "react";
-import service1 from "../img/service1.png";
-import service2 from "../img/service2.png";
-import service3 from "../img/service3.png";
-import service4 from "../img/service4.png";
+import { Link } from "react-router-dom";
+
+import service1 from "../../../img/service1.png";
+import service2 from "../../../img/service2.png";
+import service3 from "../../../img/service3.png";
+import service4 from "../../../img/service4.png";
 
 const Services = () => {
   return (
@@ -27,7 +29,9 @@ const Services = () => {
             <h5>Property Developers</h5>
           </div>
         </div>
-        <button className="btn know_btn my-4">learn more</button>
+        <Link to="/our-services" className="btn know_btn my-4">
+          learn more
+        </Link>
       </div>
     </section>
   );

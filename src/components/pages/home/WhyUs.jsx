@@ -1,5 +1,5 @@
 import React from "react";
-import illustration1 from "../img/illustration1.jpg";
+import illustration1 from "../../../img/illustration1.jpg";
 
 const WhyUs = () => {
   return (

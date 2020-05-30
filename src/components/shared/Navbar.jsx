@@ -7,7 +7,7 @@ const Navbar = () => {
       class="navbar navbar-expand-lg fixed navbar-light bg-light"
     >
       <div className="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           BrixxForce
         </a>
         <button
@@ -23,17 +23,14 @@ const Navbar = () => {
         </button>
         <div class="collapse navbar-collapse" id="navbar-menu">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">
+            <a class="nav-item nav-link" href="/about-us">
               About Us
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a class="nav-item nav-link" href="/our-services">
               Services
             </a>
-            <a class="nav-item nav-link" href="#">
+            <a class="nav-item nav-link" href="/our-works">
               Portfolio
-            </a>
-            <a class="nav-item nav-link" href="#">
-              Contact us
             </a>
           </div>
         </div>

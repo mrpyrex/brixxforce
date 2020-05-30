@@ -1,26 +1,27 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import "./App.css";
 
-import Header from "./components/Header";
-import Carousel from "./components/Carousel";
-import HomeAbout from "./components/HomeAbout";
-import Contact from "./components/Contact";
-import Services from "./components/Services";
-import Footer from "./components/Footer";
-import WhyUs from "./components/WhyUs";
+import Homepage from "./components/pages/home/Homepage";
+import Header from "./components/shared/Header";
+import Aboutpage from "./components/pages/Aboutpage";
+import Portfoliopage from "./components/pages/Portfoliopage";
+import Servicespage from "./components/pages/Servicespage";
+import Footer from "./components/shared/Footer";
 
 function App() {
   return (
-    <Fragment>
+    <BrowserRouter>
       <Header />
-      <Carousel />
-      <HomeAbout />
-      <Services />
-      <WhyUs />
-      <Contact />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/about-us" component={Aboutpage} />
+        <Route path="/our-works" component={Portfoliopage} />
+        <Route path="/our-services" component={Servicespage} />
+      </Switch>
       <Footer />
-    </Fragment>
+    </BrowserRouter>
   );
 }
 
