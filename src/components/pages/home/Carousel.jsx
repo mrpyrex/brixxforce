@@ -44,8 +44,12 @@ const Carousel = () => {
                 We deliver commecial buildings, acquisition surveys, office
                 designs and project management.
               </p>
-              <a className="btn know_btn">know more</a>
-              <a className="btn know_btn">view project</a>
+              <Link to="/about-us" className="btn know_btn">
+                know more
+              </Link>
+              <Link to="/our-works" className="btn know_btn">
+                view project
+              </Link>
             </div>
           </div>
         </div>
@@ -59,8 +63,12 @@ const Carousel = () => {
               <p>
                 We carry out renovations and re-lease of existing properties
               </p>
-              <a className="btn know_btn">know more</a>
-              <a className="btn know_btn">view project</a>
+              <Link to="/about-us" className="btn know_btn">
+                know more
+              </Link>
+              <Link to="/our-works" className="btn know_btn">
+                view project
+              </Link>
             </div>
           </div>
         </div>

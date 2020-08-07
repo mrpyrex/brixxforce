@@ -1,5 +1,6 @@
 import React from "react";
 import man from "../../../img/man.png";
+import { Link } from "react-router-dom";
 const HomeAbout = () => {
   return (
     <section>
@@ -14,7 +15,10 @@ const HomeAbout = () => {
                 architectural design,buildingconstruction, master planning,
                 landscaping and interior design servivces since 2010.
               </p>
-              <a className="btn know_btn ">Learn More</a>
+
+              <Link to="/about-us" className="btn know_btn ">
+                Learn More
+              </Link>
             </div>
           </div>
           <div className="col-md-5">
