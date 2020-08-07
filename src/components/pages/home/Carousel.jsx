@@ -2,6 +2,7 @@ import React from "react";
 import img1 from "../../../img/img1.jpg";
 import img2 from "../../../img/img2.jpg";
 import img3 from "../../../img/img3.jpg";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   return (
@@ -20,13 +21,15 @@ const Carousel = () => {
 
               <h1 className="second_heading">General Construction Services</h1>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit,
+                We provide day-to-day material, labor, equipment and services to
+                complete your construction projects timely and cost effectively
               </p>
-              <a className="btn know_btn">know more</a>
-              <a className="btn know_btn">view project</a>
+              <Link to="/about-us" className="btn know_btn">
+                know more
+              </Link>
+              <Link to="/our-works" className="btn know_btn">
+                view project
+              </Link>
             </div>
           </div>
         </div>
@@ -38,10 +41,8 @@ const Carousel = () => {
 
               <h1 className="second_heading">Building Consultant Services</h1>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit,
+                We deliver commecial buildings, acquisition surveys, office
+                designs and project management.
               </p>
               <a className="btn know_btn">know more</a>
               <a className="btn know_btn">view project</a>
@@ -56,10 +57,7 @@ const Carousel = () => {
 
               <h1 className="second_heading">Property Developers</h1>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-                ipsum quia dolor sit amet, consectetur, adipisci velit,
+                We carry out renovations and re-lease of existing properties
               </p>
               <a className="btn know_btn">know more</a>
               <a className="btn know_btn">view project</a>

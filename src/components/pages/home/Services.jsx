@@ -13,25 +13,30 @@ const Services = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <img src={service1} alt="" />
-            <h5>Architectural Design</h5>
+            <Link to="/our-services">
+              <img src={service1} alt="" />
+              <h5>Architectural Design</h5>
+            </Link>
           </div>
           <div className="col-md-3">
-            <img src={service2} alt="" />
-            <h5>Building Consultants</h5>
+            <Link to="/our-services">
+              <img src={service2} alt="" />
+              <h5>Building Consultants</h5>
+            </Link>
           </div>
           <div className="col-md-3">
-            <img src={service3} alt="" />
-            <h5>Interior/Exterior Designs</h5>
+            <Link to="/our-services">
+              <img src={service3} alt="" />
+              <h5>Interior/Exterior Designs</h5>
+            </Link>
           </div>
           <div className="col-md-3">
-            <img src={service4} alt="" />
-            <h5>Property Developers</h5>
+            <Link to="/our-services">
+              <img src={service4} alt="" />
+              <h5>Property Developers</h5>{" "}
+            </Link>
           </div>
         </div>
-        <Link to="/our-services" className="btn know_btn my-4">
-          learn more
-        </Link>
       </div>
     </section>
   );
