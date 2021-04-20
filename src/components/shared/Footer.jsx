@@ -40,7 +40,8 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <i className="far fa-envelope mr-2"></i>support@brixxforce.com
+                  <i className="far fa-envelope mr-2"></i>
+                  support@brixxfauceltd.com
                 </li>
               </ul>
             </div>
@@ -69,7 +70,7 @@ const Footer = () => {
       </footer>
       <div className="footer-bottom">
         <div className="container text-center">
-          Brixxforce Groups &copy; {new Date().getFullYear()}. All Rights
+          BrixxFauce Limited &copy; {new Date().getFullYear()}. All Rights
           Reserved.
         </div>
       </div>

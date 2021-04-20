@@ -8,7 +8,7 @@ const Navbar = () => {
     >
       <div className="container">
         <a class="navbar-brand" href="/">
-          BrixxForce
+          BrixxFauce
         </a>
         <button
           class="navbar-toggler"

@@ -8,9 +8,9 @@ const HomeAbout = () => {
         <div className="row">
           <div className="col-md-7">
             <div className="about-content">
-              <h2>Welcome To Brixxforce</h2>
+              <h2>Welcome To BrixxFauce</h2>
               <p>
-                Brixxforce Groups is a dynamic and efficient architectural and
+                BrixxFauce Limited is a dynamic and efficient architectural and
                 building construction firm that has been providing complete
                 architectural design,buildingconstruction, master planning,
                 landscaping and interior design servivces since 2010.

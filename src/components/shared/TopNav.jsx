@@ -7,7 +7,7 @@ const TopNav = () => {
       <li className="nav-item">
         <Link className="nav-link">
           <i className="far fa-envelope mr-2"></i>
-          brixxforcegroup@ymail.com
+          support@brixxfauceltd.com
         </Link>
       </li>
       <li className="nav-item">
