@@ -28,7 +28,7 @@ const Aboutpage = () => {
             impact on their surrounding environment. Our success in achieved
             through dedication and team work as we develop relationship with our
             clients and communities to understand and meet their unique needs.
-            Brixxforce mission is to achieve construction. Excellence through a
+            Brixxfauce mission is to achieve construction. Excellence through a
             thoughtful building process which provides each project with an
             overriding concept. We pursue this goal through a careful project.
             We encourage the client to be actively involved throughout the
@@ -47,7 +47,7 @@ const Aboutpage = () => {
           </p>
           <h2>Our Services</h2>
           <p>
-            Brixxforce Groups is experienced in all phases of building
+            Brixxfauce Groups is experienced in all phases of building
             construction practice from site analysis and feasibility studies,
             through construction surveillance our experience spam a wide range
             of building types and construction practices with an emphasis on
