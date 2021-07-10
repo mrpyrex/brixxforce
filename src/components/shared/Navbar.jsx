@@ -5,15 +5,15 @@ const Navbar = () => {
   return (
     <nav
       id="main-navbar"
-      class="navbar navbar-expand-lg fixed navbar-light bg-light"
+      className="navbar navbar-expand-lg fixed navbar-light bg-light"
     >
       <div className="container">
-        <Link class="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/">
           BrixxFauce
         </Link>
 
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbar-menu"
@@ -21,17 +21,17 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-menu">
-          <div class="navbar-nav ml-auto">
-            <Link class="nav-item nav-link" to="/about-us">
+        <div className="collapse navbar-collapse" id="navbar-menu">
+          <div className="navbar-nav ml-auto">
+            <Link className="nav-item nav-link" to="/about-us">
               About Us
             </Link>
-            {/* <Link class="nav-item nav-link" to="/our-services">
+            {/* <Link className="nav-item nav-link" to="/our-services">
               Services
             </Link> */}
-            <Link class="nav-item nav-link" to="/our-works">
+            <Link className="nav-item nav-link" to="/our-works">
               Portfolio
             </Link>
           </div>

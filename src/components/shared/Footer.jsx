@@ -14,13 +14,13 @@ const Footer = () => {
               </p>
               <ul className="social">
                 <li>
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </li>
                 <li>
-                  <i class="fab fa-facebook"></i>
+                  <i className="fab fa-facebook"></i>
                 </li>
                 <li>
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </li>
               </ul>
             </div>
@@ -31,8 +31,8 @@ const Footer = () => {
                   6.00pm
                 </li>
                 <li>
-                  <i class="far fa-building mr-2"></i> 35, UDOSEN UKO STREET,
-                  UYO, AKWA IBOM STATE{" "}
+                  <i className="far fa-building mr-2"></i> 35, UDOSEN UKO
+                  STREET, UYO, AKWA IBOM STATE{" "}
                 </li>
                 <li>
                   <i className="fas fa-phone-alt mr-2"></i> +234 703 1544 366,
@@ -46,19 +46,22 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-md-4 col-sm-4">
-              <form class="form-inline">
-                <label class="sr-only" for="inlineFormInputGroupUsername2">
+              <form className="form-inline">
+                <label
+                  className="sr-only"
+                  htmlFor="inlineFormInputGroupUsername2"
+                >
                   Username
                 </label>
-                <div class="input-group mb-2 mr-sm-2">
+                <div className="input-group mb-2 mr-sm-2">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     id="inlineFormInputGroupUsername2"
                     placeholder="Email"
                   />
-                  <div class="input-group-prepend">
-                    <button type="submit" class="btn btn-primary ">
+                  <div className="input-group-prepend">
+                    <button type="submit" className="btn btn-primary ">
                       Subscribe
                     </button>
                   </div>
