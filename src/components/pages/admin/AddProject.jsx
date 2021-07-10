@@ -1,17 +1,38 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 const AddProject = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
+  const [date, setDate] = useState("");
   const [mainpic, setMainpic] = useState(null);
 
-  const handleChange = async (e) => {
-    console.log("Loading or not");
+  const handleChange = (e) => {
+    const file = e.target.files[0];
+    setMainpic(file);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("hello");
+
+    let data = new FormData();
+    data.append("title", title);
+    data.append("description", description);
+    data.append("main_pic", mainpic);
+    data.append("date", date);
+
+    try {
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+          accept: "application/json",
+        },
+        timeout: 5000,
+      };
+      axios.post("http://localhost:8000/api/projects/", data, config);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -22,7 +43,6 @@ const AddProject = () => {
             Project Title
           </label>
           <input
-            value={title}
             type="text"
             className="form-control"
             id="title"
@@ -35,7 +55,6 @@ const AddProject = () => {
             Project Description
           </label>
           <textarea
-            value={description}
             className="form-control"
             id="description"
             rows="3"
@@ -46,7 +65,20 @@ const AddProject = () => {
           <label htmlFor="mainpic" className="form-label">
             Select Project Main Picture
           </label>
-          <input className="form-control" type="file" id="mainpic" />
+          <input
+            accept="image/*"
+            className="form-control"
+            type="file"
+            id="mainpic"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-3">
+          <input
+            type="date"
+            id="date"
+            onChange={(e) => setDate(e.target.value)}
+          />
         </div>
         <button type="submit" className="btn btn-outline-primary">
           Submit
